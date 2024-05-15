@@ -23,15 +23,13 @@ services:
     ports:
       - "3306:3306"
     restart: always
-
-
 ```
 
-创建效果
+创建效果  
 <img src="img/dockerComposeStart.png"
 alt="dockerbuild" width="60%">
 
 
-从集群中的其他linux访问mysql数据库：
+从集群中的其他linux访问mysql数据库：  
 <img src="img/accessMysql.png"
 alt="dockerbuild" width="60%">

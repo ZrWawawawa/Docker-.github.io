@@ -25,7 +25,8 @@
 
 ### Docker-compose使用
 
-使用Docker-compose创建一个有两个linux发行版和一个mysql镜像组成的集群
+使用Docker-compose创建一个有两个linux发行版和一个mysql镜像组成的集群  
+
 [Docker-compose使用](Projects/Experiment2/DockerCompose.md)
 
 ### 使用docker创建应用程序读取环境变量
