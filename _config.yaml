@@ -1,3 +1,4 @@
 title: ZR的开发博客
 source: docs
-baseurl: "/Docker.github.io"
+# baseurl: "/Docker.github.io"
+baseurl: "https://zrwawawawa.github.io/Docker.github.io/"
