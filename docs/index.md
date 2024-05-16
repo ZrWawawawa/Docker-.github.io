@@ -10,9 +10,6 @@ title: 主页
 ## Docker 简单使用相关
 
 
-### 安装Docker
-[安装桌面版Docker]({{ site.baseurl }}/Projects/Experiment1/DownloadAndInstall.html)
-
 ### 数据库
 [Docker运行各类数据库]({{ site.baseurl }}/Projects/Experiment1/DockerDatabase.html)
 
