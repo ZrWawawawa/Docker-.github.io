@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">ZR的实验记录博客</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="docker构建自己的镜像">Docker构建自己的镜像</h1>
+
+<p>这里使用的Dockerfile是</p>
+<div class="language-dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> ubuntu:22.04</span>
+
+<span class="c"># Install Dependencies</span>
+<span class="k">ENV</span><span class="s"> DEBIAN_FRONTEND=noninteractive</span>
+
+<span class="c"># Update software sources to Tsinghua mirror</span>
+<span class="k">RUN </span><span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g'</span> /etc/apt/sources.list
+
+<span class="c"># Install utilities</span>
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> <span class="se">\
+</span>    net-tools <span class="se">\
+</span>    netcat <span class="se">\
+</span>    iputils-ping <span class="se">\
+</span>    ssh <span class="se">\
+</span>    curl <span class="se">\
+</span>    wget <span class="se">\
+</span>    vim <span class="se">\
+</span>    build-essential
+</code></pre></div></div>
+<p>因为原软件源速度过慢，这里使用sed统一更换了软件源地址</p>
+
+<p>build截图如下<br />
+<img src="img/dockerBuild.png" alt="dockerbuild" width="75%" /></p>
+
+<p>使用镜像启动容器:</p>
+
+<p><img src="img/dockerBuildRun.png" alt="dockerbuild" width="75%" /></p>
+
+  </main>
+
+  <footer>
+    <p>&copy; ZR的实验记录博客 </p>
+  </footer>
+</body>
+</html>
