@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 # 查看容器ID
 <img src="img/CheckID.png"
 alt="CheckID" width="60%">

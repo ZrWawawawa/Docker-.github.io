@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 # 利用Docker运行不同的Linux发行版
 # 运行Ubuntu
 <img src="img/RunUbuntu.png" 

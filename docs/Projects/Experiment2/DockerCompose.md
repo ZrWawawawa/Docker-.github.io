@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # 使用Docker-compose创建集群
 
 使用的docker compose配置文件

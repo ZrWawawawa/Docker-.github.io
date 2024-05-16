@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # Docker构建自己的镜像
 
 这里使用的Dockerfile是

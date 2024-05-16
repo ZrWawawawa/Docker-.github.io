@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 # 利用Python运行编译环境
 <img src="img/PythonCode.png"
 alt="PythonCode" width="60%">

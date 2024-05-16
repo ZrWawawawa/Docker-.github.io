@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 # Docker运行Redis环境
 
 # 运行MySQL
